@@ -1,0 +1,9 @@
+version: '3.9'
+services:
+  sample:
+    build: .
+    volumes:
+      - .:/app
+    environment:
+      - TZ=Asia/Tokyo
+    tty: true
